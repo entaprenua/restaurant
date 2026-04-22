@@ -9,7 +9,7 @@ export default function CartPage() {
   return (
     <div class="container mx-auto px-4 py-8 max-w-6xl">
       <Text variant="h1" class="text-2xl font-bold mb-6">Your Order</Text>
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Cart Items */}
         <div class="lg:col-span-2">
@@ -21,7 +21,7 @@ export default function CartPage() {
                     <div class="flex items-start shrink-0">
                       <CartItemCheckbox />
                     </div>
-                    <Product class="flex gap-4 flex-1 min-w-0">
+                    <Product href="/products" class="flex gap-4 flex-1 min-w-0">
                       <ProductImage class="w-20 h-20 object-cover rounded-lg flex-shrink-0" />
                       <div class="flex flex-col gap-2 min-w-0 flex-1">
                         <ProductName class="font-medium truncate" />
@@ -36,7 +36,7 @@ export default function CartPage() {
                 </div>
               </div>
             </CartItemsView>
-            
+
             <CartEmpty>
               <div class="bg-white rounded-lg border p-12 text-center">
                 <div class="text-6xl mb-4">🍽️</div>
@@ -54,7 +54,7 @@ export default function CartPage() {
         <div class="lg:col-span-1">
           <div class="bg-white rounded-lg border p-6 sticky top-4">
             <Text variant="h2" class="text-lg font-semibold mb-4">Order Summary</Text>
-            
+
             <div class="space-y-3 mb-6">
               <Flex justify="between">
                 <Text class="text-muted-foreground">Subtotal</Text>

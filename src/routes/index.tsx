@@ -72,7 +72,7 @@ function SectionTitle(props: { title: string }) {
 
 function ProductCard() {
   return (
-    <Product class="group bg-white rounded-lg border m-1 overflow-hidden hover:shadow-lg transition-all duration-200">
+    <Product href="/products" class="group bg-white rounded-lg border m-1 overflow-hidden hover:shadow-lg transition-all duration-200">
       <div class="relative overflow-hidden">
         <ProductImage class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105" />
         <div class="absolute top-2 right-2">
